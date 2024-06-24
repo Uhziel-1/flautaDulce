@@ -1,0 +1,94 @@
+use("flautadulcedb")
+
+db.clients.insertMany([
+  {
+    dni: "12345678",
+    name: "Ana López",
+    birthdate: new Date("1990-05-15"),
+    address: {
+      zone_id: ObjectId("6679903aaa0c6117c0afaf0e"),
+      address: "Av. Principal 123"
+    }
+  },
+  {
+    dni: "87654321",
+    name: "Pedro García",
+    birthdate: new Date("1985-09-20"),
+    address: {
+      zone_id: ObjectId("6679903aaa0c6117c0afaf0e"),
+      address: "Jr. Independencia 456"
+    }
+  },
+  {
+    dni: "23456789",
+    name: "María Martínez",
+    birthdate: new Date("1995-02-10"),
+    address: {
+      zone_id: ObjectId("6679903aaa0c6117c0afaf0f"),
+      address: "Calle San Martín 789"
+    }
+  },
+  {
+    dni: "34567890",
+    name: "Juan Ramírez",
+    birthdate: new Date("1988-11-30"),
+    address: {
+      zone_id: ObjectId("6679903aaa0c6117c0afaf0f"),
+      address: "Av. América Sur 321"
+    }
+  },
+  {
+    dni: "45678901",
+    name: "Luisa Pérez",
+    birthdate: new Date("1992-07-25"),
+    address: {
+      zone_id: ObjectId("6679903aaa0c6117c0afaf0f"),
+      address: "Jr. Pizarro 567"
+    }
+  },
+  {
+    dni: "56789012",
+    name: "Roberto Fernández",
+    birthdate: new Date("1987-04-12"),
+    address: {
+      zone_id: ObjectId("6679903aaa0c6117c0afaf10"),
+      address: "Calle Bolívar 890"
+    }
+  },
+  {
+    dni: "67890123",
+    name: "Laura Gómez",
+    birthdate: new Date("1993-08-05"),
+    address: {
+      zone_id: ObjectId("6679903aaa0c6117c0afaf10"),
+      address: "Av. Universitaria 234"
+    }
+  },
+  {
+    dni: "78901234",
+    name: "Carlos Sánchez",
+    birthdate: new Date("1998-01-18"),
+    address: {
+      zone_id: ObjectId("6679903aaa0c6117c0afaf11"),
+      address: "Jr. Libertad 678"
+    }
+  },
+  {
+    dni: "89012345",
+    name: "Elena Rodríguez",
+    birthdate: new Date("1991-06-03"),
+    address: {
+      zone_id: ObjectId("6679903aaa0c6117c0afaf11"),
+      address: "Av. Los Ángeles 901"
+    }
+  },
+  {
+    dni: "90123456",
+    name: "Diego Martín",
+    birthdate: new Date("1986-12-15"),
+    address: {
+      zone_id: ObjectId("6679903aaa0c6117c0afaf11"),
+      address: "Jr. Lima 1234"
+    }
+  }
+]);

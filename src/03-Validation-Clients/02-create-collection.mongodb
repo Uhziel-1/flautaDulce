@@ -1,0 +1,38 @@
+use("flautadulcedb")
+
+//Creamos un colleccion en forma explicita
+db.createCollection("clients", {
+    validator: {
+      $jsonSchema: {
+        bsonType: "object",
+        required: ["dni", "name", "birthdate", "address"],
+        properties: {
+          dni: {
+            bsonType: "string",
+            pattern: "^[0-9]{8}$"
+          },
+          name: {
+            bsonType: "string",
+            maxLength: 100
+          },
+          birthdate: {
+            bsonType: "date",
+          },
+          address: {
+            bsonType: "object",
+            required: ["zone_id", "address"],
+            properties: {
+              zone_id: {
+                bsonType: "objectId",
+              },
+              address: {
+                bsonType: "string",
+              },
+            }
+          },
+        }
+      }
+    }
+  }
+);
+  

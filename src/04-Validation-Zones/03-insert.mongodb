@@ -1,0 +1,20 @@
+use("flautadulcedb")
+
+db.zones.insertMany([
+  {
+    name: "Central",
+    size_km2: 25
+  },
+  {
+    name: "North",
+    size_km2: 30
+  },
+  {
+    name: "East",
+    size_km2: 20
+  },
+  {
+    name: "West",
+    size_km2: 35
+  }
+]);

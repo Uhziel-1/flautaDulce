@@ -1,0 +1,22 @@
+use("flautadulcedb")
+
+//Creamos un colleccion en forma explicita
+db.createCollection("zones", {
+    validator: {
+      $jsonSchema: {
+        bsonType: "object",
+        required: ["name", "size_km2"],
+        properties: {
+          name: {
+            bsonType: "string",
+            maxLength: 100
+          },
+          size_km2: {
+            bsonType: "int",
+          },
+        }
+      }
+    }
+  }
+);
+  

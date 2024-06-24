@@ -1,0 +1,3 @@
+use("flautadulcedb")
+
+db.dealers.drop()

@@ -1,0 +1,50 @@
+use("flautadulcedb")
+
+//Creamos un colleccion en forma explicita
+db.createCollection("dealers", {
+    validator: {
+      $jsonSchema: {
+        bsonType: "object",
+        required: ["dni", "name", "time_range", "motorbike", "zone"],
+        properties: {
+          dni: {
+            bsonType: "string",
+            pattern: "^[0-9]{8}$"
+          },
+          name: {
+            bsonType: "string",
+            maxLength: 100
+          },
+          time_range: {
+            bsonType: "string",
+          },
+          motorbike: {
+            bsonType: "object",
+            required: ["patent", "displacement", "brand", "model", "maximum_speed"],
+            properties: {
+              patent: {
+                bsonType: "string",
+              },
+              displacement: {
+                bsonType: "string",
+              },
+              brand: {
+                bsonType: "string",
+              },
+              model: {
+                bsonType: "string",
+              },
+              maximum_speed: {
+                bsonType: "int",
+              }
+            },
+          },
+          zone: {
+            bsonType: "objectId"
+          }
+        }
+      }
+    }
+  }
+);
+  

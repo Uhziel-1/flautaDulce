@@ -1,0 +1,134 @@
+use("flautadulcedb")
+
+db.dealers.insertMany([
+  {
+    dni: "12345678",
+    name: "Juan Pérez",
+    time_range: "09:00-18:00",
+    motorbike: {
+      patent: "ABC123",
+      displacement: "250.00",
+      brand: "Honda",
+      model: "CBR250R",
+      maximum_speed: 180
+    },
+    zone: ObjectId("6679903aaa0c6117c0afaf0e")
+  },
+  {
+    dni: "87654321",
+    name: "María Gómez",
+    time_range: "08:00-17:00",
+    motorbike: {
+      patent: "DEF456",
+      displacement: "150.00",
+      brand: "Yamaha",
+      model: "YZF-R15",
+      maximum_speed: 140
+    },
+    zone: ObjectId("6679903aaa0c6117c0afaf0e")
+  },
+  {
+    dni: "45678901",
+    name: "Carlos Rodríguez",
+    time_range: "10:00-19:00",
+    motorbike: {
+      patent: "GHI789",
+      displacement: "200.00",
+      brand: "Suzuki",
+      model: "GSX200",
+      maximum_speed: 160
+    },
+    zone: ObjectId("6679903aaa0c6117c0afaf0f")
+  },
+  {
+    dni: "23456789",
+    name: "Ana Martínez",
+    time_range: "07:00-16:00",
+    motorbike: {
+      patent: "JKL012",
+      displacement: "180.00",
+      brand: "Kawasaki",
+      model: "Ninja 250",
+      maximum_speed: 170
+    },
+    zone: ObjectId("6679903aaa0c6117c0afaf0f")
+  },
+  {
+    dni: "34567890",
+    name: "Pedro López",
+    time_range: "11:00-20:00",
+    motorbike: {
+      patent: "MNO345",
+      displacement: "300.00",
+      brand: "BMW",
+      model: "S1000RR",
+      maximum_speed: 200
+    },
+    zone: ObjectId("6679903aaa0c6117c0afaf0f")
+  },
+  {
+    dni: "56789012",
+    name: "Laura Silva",
+    time_range: "08:30-17:30",
+    motorbike: {
+      patent: "PQR678",
+      displacement: "125.00",
+      brand: "KTM",
+      model: "Duke 125",
+      maximum_speed: 130
+    },
+    zone: ObjectId("6679903aaa0c6117c0afaf10")
+  },
+  {
+    dni: "67890123",
+    name: "Jorge Pérez",
+    time_range: "09:30-18:30",
+    motorbike: {
+      patent: "STU901",
+      displacement: "350.00",
+      brand: "Ducati",
+      model: "Panigale V4",
+      maximum_speed: 210
+    },
+    zone: ObjectId("6679903aaa0c6117c0afaf10")
+  },
+  {
+    dni: "78901234",
+    name: "Elena Sánchez",
+    time_range: "12:00-21:00",
+    motorbike: {
+      patent: "VWX234",
+      displacement: "200.00",
+      brand: "Harley-Davidson",
+      model: "Iron 883",
+      maximum_speed: 180
+    },
+    zone: ObjectId("6679903aaa0c6117c0afaf11")
+  },
+  {
+    dni: "89012345",
+    name: "Diego Fernández",
+    time_range: "07:30-16:30",
+    motorbike: {
+      patent: "YZA567",
+      displacement: "400.00",
+      brand: "Aprilia",
+      model: "RSV4 1100 Factory",
+      maximum_speed: 220
+    },
+    zone: ObjectId("6679903aaa0c6117c0afaf11")
+  },
+  {
+    dni: "90123456",
+    name: "Lucía García",
+    time_range: "10:30-19:30",
+    motorbike: {
+      patent: "BCD789",
+      displacement: "150.00",
+      brand: "Benelli",
+      model: "TNT 150",
+      maximum_speed: 140
+    },
+    zone: ObjectId("6679903aaa0c6117c0afaf11")
+  }
+]);
